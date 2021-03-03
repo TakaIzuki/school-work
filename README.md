@@ -1,2 +1,2 @@
 # School Work
-Random pieces of code I gotta do for school.
+Collection of my school coding projects.
