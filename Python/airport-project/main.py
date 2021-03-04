@@ -22,35 +22,33 @@ def main():
     menu(airports_list)
 
 # Kills program when called.
-def exitProgram(running):
-    running = False
+def exitProgram():
     exit()
 
 # Command line option menu.
 def menu(airports_list):
-    running = True
-    while running == True:
+    while True:
         choice = input(
             '''
-    Choose an option by typing the respective number:
-        1 - Enter airport details
-        2 - Enter flight details
-        3 - Enter price plan and calculate profit
-        4 - Clear data
-        5 - Quit
+Choose an option by typing the respective number:
+    1 - Enter airport details
+    2 - Enter flight details
+    3 - Enter price plan and calculate profit
+    4 - Clear data
+    5 - Quit
             '''
         )
 
         if choice == '1':
-            continue
+            print("Enter airport details")
         elif choice == '2':
-            continue
+            print("Enter flight details")
         elif choice == '3':
-            continue
+            print("Enter price plan and calculate profit")
         elif choice == '4':
-            continue
+            print("Clear Data")
         elif choice == '5':
-            exitProgram(running)
+            exitProgram()
         else:
             print("Please enter a valid number.")
 
