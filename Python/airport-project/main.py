@@ -38,18 +38,19 @@ Choose an option by typing the respective number:
     5 - Quit
             '''
         )
-
-        if choice == '1':
-            print("Enter airport details")
-        elif choice == '2':
-            print("Enter flight details")
-        elif choice == '3':
-            print("Enter price plan and calculate profit")
-        elif choice == '4':
-            print("Clear Data")
-        elif choice == '5':
-            exitProgram()
-        else:
-            print("Please enter a valid number.")
+        
+        try:
+            if choice == '1':
+                print("Enter airport details")
+            elif choice == '2':
+                print("Enter flight details")
+            elif choice == '3':
+                print("Enter price plan and calculate profit")
+            elif choice == '4':
+                print("Clear Data")
+            elif choice == '5':
+                exitProgram()
+        except:
+            print("Please enter a valid input.")
 
 main()
