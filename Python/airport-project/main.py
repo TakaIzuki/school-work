@@ -19,22 +19,39 @@ def main():
         # Append the split lines into one list to create a listed version of our CSV file.
         airports_list.append(split_line)
 
-    print(airports_list)
+    menu(airports_list)
 
 # Kills program when called.
-def exitProgram():
+def exitProgram(running):
+    running = False
     exit()
 
 # Command line option menu.
-def menu():
-    print(
-        '''
-Choose an option by typing the respective number:
-    1 - 
-    2 - 
-    3 -
-    4 -
-        '''
-    )
+def menu(airports_list):
+    running = True
+    while running == True:
+        choice = input(
+            '''
+    Choose an option by typing the respective number:
+        1 - Enter airport details
+        2 - Enter flight details
+        3 - Enter price plan and calculate profit
+        4 - Clear data
+        5 - Quit
+            '''
+        )
+
+        if choice == '1':
+            continue
+        elif choice == '2':
+            continue
+        elif choice == '3':
+            continue
+        elif choice == '4':
+            continue
+        elif choice == '5':
+            exitProgram(running)
+        else:
+            print("Please enter a valid number.")
 
 main()
