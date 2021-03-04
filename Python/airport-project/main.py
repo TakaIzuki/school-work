@@ -7,23 +7,25 @@
 # Main execution of the program.
 def main():
     # Open provided CSV file
-    f = open("Python/airport-project/Airports.txt", "r")
+    f = open("Python/airport-project/Airports.txt", 'r')
     # Define list to store seperated CSV file in.
     airports_list = []
 
     # Loop through file and split each line into seperate lists.
     for i in f:
-        split_line = i.split(",")
-        # Append the seperate lists into one list to create a listed version of our CSV file.
+        split_line = i.split(',')
+        # Delete the unneeded newline (\n) from the list
+        del split_line[-1]
+        # Append the split lines into one list to create a listed version of our CSV file.
         airports_list.append(split_line)
 
     print(airports_list)
 
-# Kill program when called
+# Kills program when called.
 def exitProgram():
     exit()
 
-# Command line option menu
+# Command line option menu.
 def menu():
     print(
         '''
